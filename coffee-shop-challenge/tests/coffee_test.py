@@ -1,7 +1,7 @@
 import pytest
-from ..coffee import Coffee
-from ..customer import Customer
-from ..order import Order
+from coffee import Coffee
+from customer import Customer
+from order import Order
 
 class TestCoffee:
     def test_coffee_initialization(self):

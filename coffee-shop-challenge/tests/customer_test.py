@@ -1,7 +1,7 @@
 import pytest
-from ..customer import Customer
-from ..coffee import Coffee
-from ..order import Order
+from customer import Customer
+from coffee import Coffee
+from order import Order
 
 class TestCustomer:
     def test_customer_initialization(self):
@@ -9,7 +9,7 @@ class TestCustomer:
         assert customer.name == "Allan"
 
     def test_name_validation(self):
-        with pytest.raises(ValueError):  # Fix: ValueError, not TypeError
+        with pytest.raises(ValueError):
             Customer(123)
         with pytest.raises(ValueError):
             Customer("")
